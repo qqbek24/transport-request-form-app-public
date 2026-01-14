@@ -1,0 +1,41 @@
+# Development mode z nginx proxy
+name: "transport-request-app"
+
+services:
+  # Backend - bez zewnętrznych portów
+  backend:
+    build:
+      context: .
+      dockerfile: ./backend/Dockerfile
+    volumes:
+      - "./backend/attachments:/app/attachments"
+      - "./backend/data:/app/data"
+    environment:
+      - ENV=development
+      - PYTHONPATH=/app
+    restart: always
+
+  # Frontend - bez zewnętrznych portów
+  frontend:
+    build:
+      context: .
+      dockerfile: ./frontend/Dockerfile
+    environment:
+      - REACT_APP_API_BASE_URL=  # Pusty = względny URL przez nginx proxy
+      - NODE_ENV=development
+    depends_on:
+      - backend
+    restart: always
+
+  # Nginx proxy
+  nginx:
+    image: nginx:alpine
+    ports:
+      - "80:80"     # HTTP
+      - "443:443"   # HTTPS (jeśli masz certyfikaty)
+    volumes:
+      - "./nginx/nginx-dev.conf:/etc/nginx/conf.d/default.conf"
+    depends_on:
+      - frontend
+      - backend
+    restart: always

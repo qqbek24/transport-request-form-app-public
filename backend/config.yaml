@@ -1,0 +1,171 @@
+# use what needed, you have much freedom here
+# but remember to keep the structure of branches - dev/test/prod/default
+# default branch is loaded always but superseeded by the branch you are running on (bot_mode)
+dev:
+  sap_system: "ACE"
+  sharepoint_site: "https://your-sharepoint-site.sharepoint.com/sites/transport-dev"
+  excel_file_path: "/Shared Documents/transport_requests_dev.xlsx"
+  attachments_folder: "/Shared Documents/Attachments/dev"
+  # Email test list - users to send test emails to when user_email is 'dev@1.dev'
+  test_emails:
+    - "dev@1.dev"
+  # CC recipients for dev mode confirmation emails
+  cc_email: "developer@yourdomain.com;your.email@gmail.com"
+test:
+  sap_system: "ACE"
+  sharepoint_site: "https://your-sharepoint-site.sharepoint.com/sites/transport-test"
+  excel_file_path: "/Shared Documents/transport_requests_test.xlsx"
+  attachments_folder: "/Shared Documents/Attachments/test"
+  # Email test list - users to send test emails to when user_email is 'test@1.test'
+  test_emails:
+    - "test@1.test"
+  # CC recipients for test mode confirmation emails
+  cc_email: "developer@yourdomain.com"
+prod:
+  sap_system: "PCE"
+  sharepoint_site: "https://your-sharepoint-site.sharepoint.com/sites/transport"
+  excel_file_path: "/Shared Documents/transport_requests.xlsx"
+  attachments_folder: "/Shared Documents/Attachments"
+  # Email test list - users to send test emails to when user_email is 'prod@1.prod'
+  test_emails:
+    - "prod@1.prod"
+  # CC recipients for production mode confirmation emails
+  cc_email: "transport-requests@yourdomain.com"
+default:
+  developer: 'developer@yourdomain.com'
+  sap_client: '100'
+  sap_language: 'EN'
+  company_code: ''
+  layout: ''
+  max_run_time: 30  # in minutes
+  teams_folder: 'path_here'
+  input_file: 'path_here'
+  
+  # Token Manager - Automatyczne pobieranie Access Token z REST API
+  token_manager:
+    enabled: true  # Set to false to use SHAREPOINT_ACCESS_TOKEN from .env instead
+    api_url: "https://your-token-api.yourdomain.com/getaccesstoken"
+    email: "transport-app@yourdomain.com"
+    application_name: "your-app-name"
+    # Password jest pobierany z zmiennej środowiskowej: RPA_BOT_PASSWORD
+    token_lifetime_hours: 1  # Jak długo token jest cache'owany (default: 1 godzina)
+  
+  # Transport Application Settings
+  transport:
+    # Application metadata
+    app_name: "Transport Request API"
+    app_version: "2.2.0"
+    
+    # Server configuration
+    server:
+      host: "0.0.0.0"
+      port: 8000  # Internal container port
+      external_port: 8010  # External exposed port (for docs/logs)
+      production_url: "https://your-production-server.yourdomain.com:8000"
+      local_url: "http://localhost:8010"
+      external_domain: "https://transport-app.yourdomain.com"
+    
+    # CORS allowed origins
+    cors:
+      allowed_origins:
+        - "*"  # Allow all for development
+        - "https://your-production-server.yourdomain.com"
+        - "https://your-internal-server.yourdomain.com"
+        - "https://transport-app.yourdomain.com"
+        - "http://your-production-server.yourdomain.com:8002"
+        - "http://your-production-server.yourdomain.com:8000"
+        - "http://localhost:8000"
+        - "http://localhost:3000"
+    
+    # Debug mode configuration
+    debug:
+      enabled: false  # Can be overridden by ENABLE_DEBUG_MODE env variable
+      token_length: 32  # Length of debug session token (SHA256 hash truncated)
+      secret_key_env: "DEBUG_SECRET_KEY"  # Environment variable name for secret key
+    
+    # File paths and naming
+    paths:
+      json_backup_file: "/tmp/transport_requests.json"  # JSON backup location (container /tmp)
+      json_backup_dir: "/tmp/transport-backups"  # Jenkins backup directory on VM
+      logs_dir: "/tmp/logs"  # Log directory (container /tmp, zawsze zapisywalny)
+      log_file_prefix: "transport_app_"  # Log file prefix
+      log_file_extension: ".jsonl"  # Log file extension
+    
+    # Logging configuration
+    logging:
+      retention_days: 60  # Keep logs for 60 days (default)
+      app_name: "transport_app"  # Application name for log files
+      attachments_dir: "./attachments"  # Local attachments folder (relative to backend/)
+    
+    # Debug mode (can be overridden by ENABLE_DEBUG_MODE env variable)
+    # Set to true or use env variable ENABLE_DEBUG_MODE=true to enable logs viewer
+    debug_mode: false
+    
+    # Local development paths (relative to backend folder)
+    local_attachments_folder: "./attachments"
+    local_excel_file: "./data/transport_requests.xlsx"
+    
+    # SharePoint Integration
+    sharepoint:
+      enabled: true  # Set to false to disable SharePoint integration
+      
+      # Excel API method (works with open files)
+      use_excel_api: true  # Use Microsoft Graph Excel API for direct row insertion (default: true)
+                           # Set to false to use traditional download/upload method
+      
+      # Retry settings for locked Excel files (only used if use_excel_api: false)
+      max_retries: 5  # Number of attempts if file is locked (default: 3)
+      retry_wait_multiplier: 2  # Wait time multiplier: attempt * multiplier = seconds (default: 2)
+      
+      # Background sync settings
+      sync_interval_hours: 1  # How often to check JSON for unsynced records (default: 1 hour)
+      
+      # Attachment cleanup settings
+      cleanup_interval_hours: 24  # How often to run attachment cleanup (default: 24 hours = daily)
+      attachment_retention_days: 90  # Delete attachments older than this (default: 90 days = 3 months)
+      
+      # SharePoint folder URL (from browser)
+      # test folder path - developer
+      # folder_url: "https://yourcompany.sharepoint.com/sites/transport-test/Shared Documents/General/All Documents/transport-app"
+
+      # folder path sent by business
+      # https://yourcompany.sharepoint.com/:f:/r/sites/TRANSPORT/Shared%20Documents/TRANSPORT
+      # final prod path
+      folder_url: "https://yourcompany.sharepoint.com/sites/TRANSPORT/Shared Documents/TRANSPORT"
+
+      # Excel file name in SharePoint folder
+      excel_file_name: "transport_requests.xlsx"
+      worksheet_name: "Transport Requests"
+      
+      # Column mapping: form field -> Excel column header
+      # Fuzzy matching: case-insensitive, ignores spaces/apostrophes/hyphens
+      column_mapping:
+        deliveryNoteNumber: "Delivery note number"
+        truckLicensePlates: "Truck license plate numbers"
+        trailerLicensePlates: "Trailer license plate numbers"
+        carrierCountry: "Carrier's country"
+        carrierTaxCode: "Carrier's tax code"
+        carrierFullName: "Full name of the carrier"
+        borderCrossing: "Border crossing point in Romania"
+        borderCrossingDate: "Date of crossing border in Romania"
+        email: "Email"
+        phoneNumber: "Phone Number"
+        hasAttachment: "Has Attachment"
+        attachmentStatus: "Attachment Status"
+        attachmentError: "Attachment Error"
+        
+      # Additional columns to add automatically
+      auto_columns:
+        request_id: "Request ID"
+        # timestamp: "Time Spent"
+        # processing_date: "Dispatch note date"
+    
+    # Email Configuration (MS Graph API - uses same token as SharePoint)
+    email:
+      enabled: true  # Set to false to disable confirmation emails
+      sender_email: "transport-app@yourdomain.com" # From address (must have Mail.Send permission)
+      sender_name: "Transport Request System"
+      cc_email: "transport-requests@yourdomain.com" # "developer@yourdomain.com"  # CC address (configurable for different environments)
+      subject_template: "Transport Request Confirmation - {request_id}"
+      # Note: Uses MS Graph API with same access token as SharePoint (no separate password needed!)
+

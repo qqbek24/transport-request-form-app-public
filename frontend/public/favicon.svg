@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- Background circle -->
+  <circle cx="50" cy="50" r="48" fill="#3b82f6" stroke="#1e40af" stroke-width="2"/>
+  
+  <!-- Truck body -->
+  <rect x="25" y="45" width="35" height="20" fill="#ffffff" rx="2"/>
+  
+  <!-- Truck cabin -->
+  <rect x="25" y="35" width="15" height="10" fill="#ffffff" rx="2"/>
+  
+  <!-- Truck cargo area -->
+  <rect x="60" y="40" width="15" height="25" fill="#e5e7eb" stroke="#ffffff" stroke-width="1" rx="1"/>
+  
+  <!-- Front wheel -->
+  <circle cx="35" cy="68" r="6" fill="#1f2937" stroke="#ffffff" stroke-width="1.5"/>
+  <circle cx="35" cy="68" r="3" fill="#6b7280"/>
+  
+  <!-- Back wheel -->
+  <circle cx="65" cy="68" r="6" fill="#1f2937" stroke="#ffffff" stroke-width="1.5"/>
+  <circle cx="65" cy="68" r="3" fill="#6b7280"/>
+  
+  <!-- Cargo lines (detail) -->
+  <line x1="63" y1="45" x2="72" y2="45" stroke="#9ca3af" stroke-width="1"/>
+  <line x1="63" y1="50" x2="72" y2="50" stroke="#9ca3af" stroke-width="1"/>
+  <line x1="63" y1="55" x2="72" y2="55" stroke="#9ca3af" stroke-width="1"/>
+  
+  <!-- Window -->
+  <rect x="27" y="37" width="10" height="6" fill="#60a5fa" rx="1"/>
+</svg>

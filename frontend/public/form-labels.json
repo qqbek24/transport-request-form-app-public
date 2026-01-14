@@ -1,0 +1,25 @@
+{
+  "pageTitle": "Transport Application",
+  "fields": {
+    "deliveryNoteNumber": "Delivery note number",
+    "truckLicensePlates": "Truck license plates",
+    "trailerLicensePlates": "Trailer license plates",
+    "carrierFullName": "Carrier name",
+    "carrierCountry": "Carrier country",
+    "carrierTaxCode": "Carrier tax code",
+    "borderCrossing": "Border crossing point",
+    "borderCrossingDate": "Border crossing date",
+    "email": "Email",
+    "phoneNumber": "Phone number"
+  },
+  "buttons": {
+    "submit": "Submit Application",
+    "submitting": "Submitting..."
+  },
+  "fileUpload": {
+    "dragDrop": "Drag & drop files here, or click to select files",
+    "dropHere": "Drop the files here...",
+    "supported": "Supported: PDF, JPG, PNG (max {{maxSize}}MB each, {{maxFiles}} files total)",
+    "uploadedFiles": "Uploaded Files ({{count}}/{{maxFiles}})"
+  }
+}

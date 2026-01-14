@@ -1,0 +1,35 @@
+# Override dla lokalnego developmentu z nginx proxy
+# Użycie: docker-compose up (automatycznie używa override)
+# Dla produkcji: docker-compose -f docker-compose.yaml up
+
+services:
+  # Dodajemy nginx container tylko lokalnie
+  nginx:
+    image: nginx:alpine
+    ports:
+      - "80:80"     # HTTP
+      - "443:443"   # HTTPS (jeśli masz certyfikaty)
+    volumes:
+      - "./nginx/nginx-dev.conf:/etc/nginx/conf.d/default.conf"
+    depends_on:
+      - frontend
+      - backend
+    restart: always
+
+  # Override frontend - usuń zewnętrzny port (nginx będzie proxy)
+  frontend:
+    environment:
+      - REACT_APP_API_BASE_URL=  # Puste dla development - użyje relative URLs przez nginx
+      - NODE_ENV=development
+
+  # Override backend - usuń zewnętrzny port (nginx będzie proxy)  
+  backend:
+    environment:
+      - ENV=development
+      - PYTHONPATH=/app
+      # Token Manager - credentials z .env (główny folder)
+      - RPA_BOT_PASSWORD=${RPA_BOT_PASSWORD:-}
+      # Fallback manual token
+      - SHAREPOINT_ACCESS_TOKEN=${SHAREPOINT_ACCESS_TOKEN:-}
+      # Debug mode
+      - DEBUG_SECRET_KEY=${DEBUG_SECRET_KEY:-}

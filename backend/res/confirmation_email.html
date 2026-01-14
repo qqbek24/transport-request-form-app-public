@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transport Request Confirmation</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            -webkit-font-smoothing: antialiased;
+        }
+        /* Outlook-specific wrapper */
+        .email-wrapper {
+            width: 100%;
+            background-color: #f4f4f4;
+            padding: 20px 0;
+        }
+        .email-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 24px;
+            font-weight: 600;
+        }
+        .content {
+            padding: 30px;
+        }
+        .success-badge {
+            background-color: #10b981;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+        .request-id {
+            background-color: #f3f4f6;
+            padding: 15px;
+            border-radius: 6px;
+            border-left: 4px solid #667eea;
+            margin: 20px 0;
+        }
+        .request-id strong {
+            color: #667eea;
+            font-size: 18px;
+        }
+        .details-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        .details-table th {
+            background-color: #f9fafb;
+            padding: 12px;
+            text-align: left;
+            font-weight: 600;
+            color: #374151;
+            border-bottom: 2px solid #e5e7eb;
+        }
+        .details-table td {
+            padding: 12px;
+            border-bottom: 1px solid #e5e7eb;
+            color: #6b7280;
+        }
+        .details-table tr:last-child td {
+            border-bottom: none;
+        }
+        .footer {
+            background-color: #f9fafb;
+            padding: 20px;
+            text-align: center;
+            color: #6b7280;
+            font-size: 14px;
+        }
+        .footer p {
+            margin: 5px 0;
+        }
+        .note {
+            background-color: #fef3c7;
+            border-left: 4px solid #f59e0b;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        .note p {
+            margin: 0;
+            color: #92400e;
+        }
+    </style>
+</head>
+<body>
+    <div class="email-wrapper">
+    <div class="email-container">
+        <div class="header">
+            <h1>🚛 Transport Request Confirmed</h1>
+        </div>
+        
+        <div class="content">
+            <div class="success-badge">
+                ✓ Successfully Submitted
+            </div>
+            
+            <p>Dear User,</p>
+            <p>Your transport request has been successfully submitted and recorded in our system.</p>
+            
+            <div class="request-id">
+                <strong>Request ID:</strong> {{request_id}}
+            </div>
+            
+            <h3 style="color: #374151; margin-top: 30px;">Request Details:</h3>
+            
+            <table class="details-table">
+                <tr>
+                    <th>Field</th>
+                    <th>Value</th>
+                </tr>
+                <tr>
+                    <td><strong>Delivery Note Number</strong></td>
+                    <td>{{delivery_note}}</td>
+                </tr>
+                <tr>
+                    <td><strong>Truck License Plates</strong></td>
+                    <td>{{truck_plates}}</td>
+                </tr>
+                <tr>
+                    <td><strong>Trailer License Plates</strong></td>
+                    <td>{{trailer_plates}}</td>
+                </tr>
+                <tr>
+                    <td><strong>Carrier Country</strong></td>
+                    <td>{{carrier_country}}</td>
+                </tr>
+                <tr>
+                    <td><strong>Carrier Tax Code</strong></td>
+                    <td>{{carrier_tax_code}}</td>
+                </tr>
+                <tr>
+                    <td><strong>Carrier Full Name</strong></td>
+                    <td>{{carrier_name}}</td>
+                </tr>
+                <tr>
+                    <td><strong>Border Crossing Point</strong></td>
+                    <td>{{border_crossing}}</td>
+                </tr>
+                <tr>
+                    <td><strong>Border Crossing Date</strong></td>
+                    <td>{{crossing_date}}</td>
+                </tr>
+                <tr>
+                    <td><strong>Email</strong></td>
+                    <td>{{email}}</td>
+                </tr>
+                <tr>
+                    <td><strong>Phone Number</strong></td>
+                    <td>{{phone_number}}</td>
+                </tr>
+                <tr>
+                    <td><strong>Attachments</strong></td>
+                    <td>{{attachment_status}}</td>
+                </tr>
+            </table>
+            
+            <div class="note">
+                <p><strong>Note:</strong> This is an automated confirmation email. Please keep this email for your records. If you have any questions, please contact the UIT team.</p>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p><strong>UIT RO Transport Request System</strong></p>
+            <p>Transport Request System</p>
+            <p style="font-size: 12px; margin-top: 15px;">
+                This is an automated message, please do not reply to this email.
+            </p>
+        </div>
+    </div>
+    </div>
+</body>
+</html>

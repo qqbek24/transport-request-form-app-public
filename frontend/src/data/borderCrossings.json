@@ -1,0 +1,64 @@
+{
+  "Hungary": [
+    "Petea",
+    "Urziceni",
+    "Valea lui Mihai",
+    "Săcuieni",
+    "Borş",
+    "Salonta",
+    "Vărşand",
+    "Turnu",
+    "Nădlac",
+    "Cenad",
+    "Tudor Vladimirescu",
+    "Nădlac II",
+    "Borş II",
+    "Episcopia Bihor",
+    "Carei",
+    "Curtici"
+  ],
+  "Bulgaria": [
+    "Giurgiu",
+    "Ostrov",
+    "Negru Vodă",
+    "Vama Veche",
+    "Calafat",
+    "Lipnița",
+    "Dobromir",
+    "Călăraşi",
+    "Zimnicea",
+    "Turnu Măgurele",
+    "Bechet",
+    "Corabia",
+    "Oltenita"
+  ],
+  "Serbia": [
+    "Jimbolia",
+    "Stamora Moraviţa",
+    "Naidaş",
+    "Porţile de Fier I",
+    "Porţile de Fier II",
+    "Lunga",
+    "Vălcani",
+    "Foeni",
+    "Moldova Nouă"
+  ],
+  "Moldova": [
+    "Galați",
+    "Oancea",
+    "Albiţa",
+    "Sculeni",
+    "Stânca",
+    "Rădăuţi Prut",
+    "Bumbăta"
+  ],
+  "Ukraine": [
+    "Siret",
+    "Valea Vişeului",
+    "Halmeu",
+    "Sighetul Marmației",
+    "Vicovu de Sus",
+    "Isaccea",
+    "Racovăţ"
+  ]
+}

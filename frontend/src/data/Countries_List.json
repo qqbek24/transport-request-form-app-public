@@ -1,0 +1,1402 @@
+[
+  {
+    "id": 1,
+    "Country_EN": "Bulgaria",
+    "Kraj": "Bulgaria",
+    "Waluta": "EUR",
+    "Code_ISO": "BG",
+    "CountryNames": "Bulgaria"
+  },
+  {
+    "id": 2,
+    "Country_EN": "Hungary",
+    "Kraj": "Hungary",
+    "Waluta": "EUR",
+    "Code_ISO": "HU",
+    "CountryNames": "Hungary"
+  },
+  {
+    "id": 3,
+    "Country_EN": "Moldova",
+    "Kraj": "Moldova",
+    "Waluta": "EUR",
+    "Code_ISO": "MD",
+    "CountryNames": "Moldova"
+  },
+  {
+    "id": 4,
+    "Country_EN": "Serbia",
+    "Kraj": "Serbia",
+    "Waluta": "EUR",
+    "Code_ISO": "RS",
+    "CountryNames": "Serbia"
+  },
+  {
+    "id": 5,
+    "Country_EN": "Ukraine",
+    "Kraj": "Ukraine",
+    "Waluta": "EUR",
+    "Code_ISO": "UA",
+    "CountryNames": "Ukraine"
+  },
+  {
+    "id": 6,
+    "Country_EN": "Albania",
+    "Kraj": "Albania",
+    "Waluta": "EUR",
+    "Code_ISO": "AL",
+    "CountryNames": "Albania"
+  },
+  {
+    "id": 7,
+    "Country_EN": "Andorra",
+    "Kraj": "Andorra",
+    "Waluta": "EUR",
+    "Code_ISO": "AD",
+    "CountryNames": "Andorra"
+  },
+  {
+    "id": 8,
+    "Country_EN": "Austria",
+    "Kraj": "Austria",
+    "Waluta": "EUR",
+    "Code_ISO": "AT",
+    "CountryNames": "Austria"
+  },
+  {
+    "id": 9,
+    "Country_EN": "Belarus",
+    "Kraj": "Belarus",
+    "Waluta": "EUR",
+    "Code_ISO": "BY",
+    "CountryNames": "Belarus"
+  },
+  {
+    "id": 10,
+    "Country_EN": "Belgium",
+    "Kraj": "Belgium",
+    "Waluta": "EUR",
+    "Code_ISO": "BE",
+    "CountryNames": "Belgium"
+  },
+  {
+    "id": 11,
+    "Country_EN": "Bosnia and Herzegovina",
+    "Kraj": "Bosnia and Herzegovina",
+    "Waluta": "EUR",
+    "Code_ISO": "BA",
+    "CountryNames": "Bosnia and Herzegovina"
+  },
+  {
+    "id": 12,
+    "Country_EN": "Croatia",
+    "Kraj": "Croatia",
+    "Waluta": "EUR",
+    "Code_ISO": "HR",
+    "CountryNames": "Croatia"
+  },
+  {
+    "id": 13,
+    "Country_EN": "Cyprus",
+    "Kraj": "Cyprus",
+    "Waluta": "EUR",
+    "Code_ISO": "CY",
+    "CountryNames": "Cyprus"
+  },
+  {
+    "id": 14,
+    "Country_EN": "Czechia",
+    "Kraj": "Czechia",
+    "Waluta": "CZK",
+    "Code_ISO": "CZ",
+    "CountryNames": "Czechia"
+  },
+  {
+    "id": 15,
+    "Country_EN": "Denmark",
+    "Kraj": "Denmark",
+    "Waluta": "EUR",
+    "Code_ISO": "DK",
+    "CountryNames": "Denmark"
+  },
+  {
+    "id": 16,
+    "Country_EN": "Estonia",
+    "Kraj": "Estonia",
+    "Waluta": "EUR",
+    "Code_ISO": "EE",
+    "CountryNames": "Estonia"
+  },
+  {
+    "id": 17,
+    "Country_EN": "Finland",
+    "Kraj": "Finland",
+    "Waluta": "EUR",
+    "Code_ISO": "FI",
+    "CountryNames": "Finland"
+  },
+  {
+    "id": 18,
+    "Country_EN": "France",
+    "Kraj": "France",
+    "Waluta": "EUR",
+    "Code_ISO": "FR",
+    "CountryNames": "France"
+  },
+  {
+    "id": 19,
+    "Country_EN": "Germany",
+    "Kraj": "Germany",
+    "Waluta": "EUR",
+    "Code_ISO": "DE",
+    "CountryNames": "Germany"
+  },
+  {
+    "id": 20,
+    "Country_EN": "Gibraltar",
+    "Kraj": "Gibraltar",
+    "Waluta": "EUR",
+    "Code_ISO": "GI",
+    "CountryNames": "Gibraltar"
+  },
+  {
+    "id": 21,
+    "Country_EN": "Great Britain",
+    "Kraj": "Great Britain",
+    "Waluta": "GBP",
+    "Code_ISO": "GB",
+    "CountryNames": "Great Britain"
+  },
+  {
+    "id": 22,
+    "Country_EN": "Greece",
+    "Kraj": "Greece",
+    "Waluta": "EUR",
+    "Code_ISO": "GR",
+    "CountryNames": "Greece"
+  },
+  {
+    "id": 23,
+    "Country_EN": "Holy See",
+    "Kraj": "Holy See",
+    "Waluta": "EUR",
+    "Code_ISO": "VA",
+    "CountryNames": "Holy See"
+  },
+  {
+    "id": 24,
+    "Country_EN": "Iceland",
+    "Kraj": "Iceland",
+    "Waluta": "EUR",
+    "Code_ISO": "IS",
+    "CountryNames": "Iceland"
+  },
+  {
+    "id": 25,
+    "Country_EN": "Ireland",
+    "Kraj": "Ireland",
+    "Waluta": "EUR",
+    "Code_ISO": "IE",
+    "CountryNames": "Ireland"
+  },
+  {
+    "id": 26,
+    "Country_EN": "Italy",
+    "Kraj": "Italy",
+    "Waluta": "EUR",
+    "Code_ISO": "IT",
+    "CountryNames": "Italy"
+  },
+  {
+    "id": 27,
+    "Country_EN": "Kosovo",
+    "Kraj": "Kosovo",
+    "Waluta": "EUR",
+    "Code_ISO": "XK",
+    "CountryNames": "Kosovo"
+  },
+  {
+    "id": 28,
+    "Country_EN": "Latvia",
+    "Kraj": "Latvia",
+    "Waluta": "EUR",
+    "Code_ISO": "LV",
+    "CountryNames": "Latvia"
+  },
+  {
+    "id": 29,
+    "Country_EN": "Liechtenstein",
+    "Kraj": "Liechtenstein",
+    "Waluta": "CHF",
+    "Code_ISO": "LI",
+    "CountryNames": "Liechtenstein"
+  },
+  {
+    "id": 30,
+    "Country_EN": "Lithuania",
+    "Kraj": "Lithuania",
+    "Waluta": "EUR",
+    "Code_ISO": "LT",
+    "CountryNames": "Lithuania"
+  },
+  {
+    "id": 31,
+    "Country_EN": "Luxembourg",
+    "Kraj": "Luxembourg",
+    "Waluta": "EUR",
+    "Code_ISO": "LU",
+    "CountryNames": "Luxembourg"
+  },
+  {
+    "id": 32,
+    "Country_EN": "Malta",
+    "Kraj": "Malta",
+    "Waluta": "EUR",
+    "Code_ISO": "MT",
+    "CountryNames": "Malta"
+  },
+  {
+    "id": 33,
+    "Country_EN": "Monaco",
+    "Kraj": "Monaco",
+    "Waluta": "EUR",
+    "Code_ISO": "MC",
+    "CountryNames": "Monaco"
+  },
+  {
+    "id": 34,
+    "Country_EN": "Montenegro",
+    "Kraj": "Montenegro",
+    "Waluta": "EUR",
+    "Code_ISO": "ME",
+    "CountryNames": "Montenegro"
+  },
+  {
+    "id": 35,
+    "Country_EN": "Netherlands",
+    "Kraj": "Netherlands",
+    "Waluta": "EUR",
+    "Code_ISO": "NL",
+    "CountryNames": "Netherlands"
+  },
+  {
+    "id": 36,
+    "Country_EN": "North Macedonia",
+    "Kraj": "North Macedonia",
+    "Waluta": "EUR",
+    "Code_ISO": "MK",
+    "CountryNames": "North Macedonia"
+  },
+  {
+    "id": 37,
+    "Country_EN": "Norway",
+    "Kraj": "Norway",
+    "Waluta": "EUR",
+    "Code_ISO": "NO",
+    "CountryNames": "Norway"
+  },
+  {
+    "id": 38,
+    "Country_EN": "Poland",
+    "Kraj": "Poland",
+    "Waluta": "EUR",
+    "Code_ISO": "PL",
+    "CountryNames": "Poland"
+  },
+  {
+    "id": 39,
+    "Country_EN": "Portugal",
+    "Kraj": "Portugal",
+    "Waluta": "EUR",
+    "Code_ISO": "PT",
+    "CountryNames": "Portugal"
+  },
+  {
+    "id": 40,
+    "Country_EN": "Romania",
+    "Kraj": "Romania",
+    "Waluta": "EUR",
+    "Code_ISO": "RO",
+    "CountryNames": "Romania"
+  },
+  {
+    "id": 41,
+    "Country_EN": "San Marino",
+    "Kraj": "San Marino",
+    "Waluta": "EUR",
+    "Code_ISO": "SM",
+    "CountryNames": "San Marino"
+  },
+  {
+    "id": 42,
+    "Country_EN": "Slovakia",
+    "Kraj": "Slovakia",
+    "Waluta": "EUR",
+    "Code_ISO": "SK",
+    "CountryNames": "Slovakia"
+  },
+  {
+    "id": 43,
+    "Country_EN": "Slovenia",
+    "Kraj": "Slovenia",
+    "Waluta": "EUR",
+    "Code_ISO": "SI",
+    "CountryNames": "Slovenia"
+  },
+  {
+    "id": 44,
+    "Country_EN": "Spain",
+    "Kraj": "Spain",
+    "Waluta": "EUR",
+    "Code_ISO": "ES",
+    "CountryNames": "Spain"
+  },
+  {
+    "id": 45,
+    "Country_EN": "Sweden",
+    "Kraj": "Sweden",
+    "Waluta": "EUR",
+    "Code_ISO": "SE",
+    "CountryNames": "Sweden"
+  },
+  {
+    "id": 46,
+    "Country_EN": "Switzerland",
+    "Kraj": "Switzerland",
+    "Waluta": "CHF",
+    "Code_ISO": "CH",
+    "CountryNames": "Switzerland"
+  },
+  {
+    "id": 47,
+    "Country_EN": "the Russian Federation",
+    "Kraj": "the Russian Federation",
+    "Waluta": "EUR",
+    "Code_ISO": "RU",
+    "CountryNames": "the Russian Federation"
+  },
+  {
+    "id": 48,
+    "Country_EN": "Afghanistan",
+    "Kraj": "Afghanistan",
+    "Waluta": "EUR",
+    "Code_ISO": "AF",
+    "CountryNames": "Afghanistan"
+  },
+  {
+    "id": 49,
+    "Country_EN": "Armenia",
+    "Kraj": "Armenia",
+    "Waluta": "EUR",
+    "Code_ISO": "AM",
+    "CountryNames": "Armenia"
+  },
+  {
+    "id": 50,
+    "Country_EN": "Azerbaijan",
+    "Kraj": "Azerbaijan",
+    "Waluta": "EUR",
+    "Code_ISO": "AZ",
+    "CountryNames": "Azerbaijan"
+  },
+  {
+    "id": 51,
+    "Country_EN": "Bahrain",
+    "Kraj": "Bahrain",
+    "Waluta": "EUR",
+    "Code_ISO": "BH",
+    "CountryNames": "Bahrain"
+  },
+  {
+    "id": 52,
+    "Country_EN": "Bangladesh",
+    "Kraj": "Bangladesh",
+    "Waluta": "USD",
+    "Code_ISO": "BD",
+    "CountryNames": "Bangladesh"
+  },
+  {
+    "id": 53,
+    "Country_EN": "Bhutan",
+    "Kraj": "Bhutan",
+    "Waluta": "USD",
+    "Code_ISO": "BT",
+    "CountryNames": "Bhutan"
+  },
+  {
+    "id": 54,
+    "Country_EN": "China",
+    "Kraj": "China",
+    "Waluta": "EUR",
+    "Code_ISO": "CN",
+    "CountryNames": "China"
+  },
+  {
+    "id": 55,
+    "Country_EN": "Philippines",
+    "Kraj": "Philippines",
+    "Waluta": "EUR",
+    "Code_ISO": "PH",
+    "CountryNames": "Philippines"
+  },
+  {
+    "id": 56,
+    "Country_EN": "Georgia",
+    "Kraj": "Georgia",
+    "Waluta": "EUR",
+    "Code_ISO": "GE",
+    "CountryNames": "Georgia"
+  },
+  {
+    "id": 57,
+    "Country_EN": "India",
+    "Kraj": "India",
+    "Waluta": "EUR",
+    "Code_ISO": "IN",
+    "CountryNames": "India"
+  },
+  {
+    "id": 58,
+    "Country_EN": "Indonesia",
+    "Kraj": "Indonesia",
+    "Waluta": "EUR",
+    "Code_ISO": "ID",
+    "CountryNames": "Indonesia"
+  },
+  {
+    "id": 59,
+    "Country_EN": "Iraq",
+    "Kraj": "Iraq",
+    "Waluta": "EUR",
+    "Code_ISO": "IQ",
+    "CountryNames": "Iraq"
+  },
+  {
+    "id": 60,
+    "Country_EN": "Iran",
+    "Kraj": "Iran",
+    "Waluta": "EUR",
+    "Code_ISO": "IR",
+    "CountryNames": "Iran"
+  },
+  {
+    "id": 61,
+    "Country_EN": "Israel",
+    "Kraj": "Israel",
+    "Waluta": "USD",
+    "Code_ISO": "IL",
+    "CountryNames": "Israel"
+  },
+  {
+    "id": 62,
+    "Country_EN": "Japan",
+    "Kraj": "Japan",
+    "Waluta": "USD",
+    "Code_ISO": "JP",
+    "CountryNames": "Japan"
+  },
+  {
+    "id": 63,
+    "Country_EN": "Yemen",
+    "Kraj": "Yemen",
+    "Waluta": "EUR",
+    "Code_ISO": "YE",
+    "CountryNames": "Yemen"
+  },
+  {
+    "id": 64,
+    "Country_EN": "Jordan",
+    "Kraj": "Jordan",
+    "Waluta": "EUR",
+    "Code_ISO": "JO",
+    "CountryNames": "Jordan"
+  },
+  {
+    "id": 65,
+    "Country_EN": "Cambodia",
+    "Kraj": "Cambodia",
+    "Waluta": "USD",
+    "Code_ISO": "KH",
+  "CountryNames": "Cambodia"
+  },
+  {
+    "id": 66,
+    "Country_EN": "Qatar",
+    "Kraj": "Qatar",
+    "Waluta": "USD",
+    "Code_ISO": "QA",
+  "CountryNames": "Qatar"
+  },
+  {
+    "id": 67,
+    "Country_EN": "Kazakhstan",
+    "Kraj": "Kazakhstan",
+    "Waluta": "EUR",
+    "Code_ISO": "KZ",
+  "CountryNames": "Kazakhstan"
+  },
+  {
+    "id": 68,
+    "Country_EN": "Kuwait",
+    "Kraj": "Kuwait",
+    "Waluta": "EUR",
+    "Code_ISO": "KW",
+  "CountryNames": "Kuwait"
+  },
+  {
+    "id": 69,
+    "Country_EN": "Kyrgyzstan",
+    "Kraj": "Kyrgyzstan",
+    "Waluta": "EUR",
+    "Code_ISO": "KG",
+  "CountryNames": "Kyrgyzstan"
+  },
+  {
+    "id": 70,
+    "Country_EN": "Lebanon",
+    "Kraj": "Lebanon",
+    "Waluta": "USD",
+    "Code_ISO": "LB",
+  "CountryNames": "Lebanon"
+  },
+  {
+    "id": 71,
+    "Country_EN": "Malaysia",
+    "Kraj": "Malaysia",
+    "Waluta": "USD",
+    "Code_ISO": "MY",
+  "CountryNames": "Malaysia"
+  },
+  {
+    "id": 72,
+    "Country_EN": "Maldives",
+    "Kraj": "Maldives",
+    "Waluta": "USD",
+    "Code_ISO": "MV",
+  "CountryNames": "Maldives"
+  },
+  {
+    "id": 73,
+    "Country_EN": "Mongolia",
+    "Kraj": "Mongolia",
+    "Waluta": "EUR",
+    "Code_ISO": "MN",
+  "CountryNames": "Mongolia"
+  },
+  {
+    "id": 74,
+    "Country_EN": "Myanmar",
+    "Kraj": "Myanmar",
+    "Waluta": "USD",
+    "Code_ISO": "MM",
+  "CountryNames": "Myanmar"
+  },
+  {
+    "id": 75,
+    "Country_EN": "Nepal",
+    "Kraj": "Nepal",
+    "Waluta": "USD",
+    "Code_ISO": "NP",
+  "CountryNames": "Nepal"
+  },
+  {
+    "id": 76,
+    "Country_EN": "Oman",
+    "Kraj": "Oman",
+    "Waluta": "EUR",
+    "Code_ISO": "OM",
+  "CountryNames": "Oman"
+  },
+  {
+    "id": 77,
+    "Country_EN": "Pakistan",
+    "Kraj": "Pakistan",
+    "Waluta": "EUR",
+    "Code_ISO": "PK",
+  "CountryNames": "Pakistan"
+  },
+  {
+    "id": 78,
+    "Country_EN": "Saudi Arabia",
+    "Kraj": "Saudi Arabia",
+    "Waluta": "EUR",
+    "Code_ISO": "SA",
+  "CountryNames": "Saudi Arabia"
+  },
+  {
+    "id": 79,
+    "Country_EN": "Singapore",
+    "Kraj": "Singapore",
+    "Waluta": "USD",
+    "Code_ISO": "SG",
+  "CountryNames": "Singapore"
+  },
+  {
+    "id": 80,
+    "Country_EN": "United Arab Emirates",
+    "Kraj": "United Arab Emirates",
+    "Waluta": "USD",
+    "Code_ISO": "AE",
+  "CountryNames": "United Arab Emirates"
+  },
+  {
+    "id": 81,
+    "Country_EN": "Sri Lanka",
+    "Kraj": "Sri Lanka",
+    "Waluta": "USD",
+    "Code_ISO": "LK",
+  "CountryNames": "Sri Lanka"
+  },
+  {
+    "id": 82,
+    "Country_EN": "Tajikistan",
+    "Kraj": "Tajikistan",
+    "Waluta": "EUR",
+    "Code_ISO": "TJ",
+  "CountryNames": "Tajikistan"
+  },
+  {
+    "id": 83,
+    "Country_EN": "Thailand",
+    "Kraj": "Thailand",
+    "Waluta": "EUR",
+    "Code_ISO": "TH",
+  "CountryNames": "Thailand"
+  },
+  {
+    "id": 84,
+    "Country_EN": "Taiwan",
+    "Kraj": "Taiwan",
+    "Waluta": "EUR",
+    "Code_ISO": "TW",
+  "CountryNames": "Taiwan"
+  },
+  {
+    "id": 85,
+    "Country_EN": "Turkey",
+    "Kraj": "Turkey",
+    "Waluta": "EUR",
+    "Code_ISO": "TR",
+  "CountryNames": "Turkey"
+  },
+  {
+    "id": 86,
+    "Country_EN": "Turkmenistan",
+    "Kraj": "Turkmenistan",
+    "Waluta": "EUR",
+    "Code_ISO": "TM",
+  "CountryNames": "Turkmenistan"
+  },
+  {
+    "id": 87,
+    "Country_EN": "Uzbekistan",
+    "Kraj": "Uzbekistan",
+    "Waluta": "EUR",
+    "Code_ISO": "UZ",
+  "CountryNames": "Uzbekistan"
+  },
+  {
+    "id": 88,
+    "Country_EN": "United States of America",
+    "Kraj": "United States of America",
+    "Waluta": "USD",
+    "Code_ISO": "US",
+  "CountryNames": "United States of America"
+  },
+  {
+    "id": 89,
+    "Country_EN": "Bahamas",
+    "Kraj": "Bahamas",
+    "Waluta": "USD",
+    "Code_ISO": "BS",
+  "CountryNames": "Bahamas"
+  },
+  {
+    "id": 90,
+    "Country_EN": "Belize",
+    "Kraj": "Belize",
+    "Waluta": "USD",
+    "Code_ISO": "BZ",
+  "CountryNames": "Belize"
+  },
+  {
+    "id": 91,
+    "Country_EN": "Guatemala",
+    "Kraj": "Guatemala",
+    "Waluta": "USD",
+    "Code_ISO": "GT",
+  "CountryNames": "Guatemala"
+  },
+  {
+    "id": 92,
+    "Country_EN": "Honduras",
+    "Kraj": "Honduras",
+    "Waluta": "USD",
+    "Code_ISO": "HN",
+  "CountryNames": "Honduras"
+  },
+  {
+    "id": 93,
+    "Country_EN": "Canada",
+    "Kraj": "Canada",
+    "Waluta": "USD",
+    "Code_ISO": "CA",
+  "CountryNames": "Canada"
+  },
+  {
+    "id": 94,
+    "Country_EN": "Costa Rica",
+    "Kraj": "Costa Rica",
+    "Waluta": "USD",
+    "Code_ISO": "CR",
+  "CountryNames": "Costa Rica"
+  },
+  {
+    "id": 95,
+    "Country_EN": "Cuba",
+    "Kraj": "Cuba",
+    "Waluta": "EUR",
+    "Code_ISO": "CU",
+  "CountryNames": "Cuba"
+  },
+  {
+    "id": 96,
+    "Country_EN": "Mexico",
+    "Kraj": "Mexico",
+    "Waluta": "USD",
+    "Code_ISO": "MX",
+  "CountryNames": "Mexico"
+  },
+  {
+    "id": 97,
+    "Country_EN": "Nicaragua",
+    "Kraj": "Nicaragua",
+    "Waluta": "USD",
+    "Code_ISO": "NI",
+  "CountryNames": "Nicaragua"
+  },
+  {
+    "id": 98,
+    "Country_EN": "Panama",
+    "Kraj": "Panama",
+    "Waluta": "USD",
+    "Code_ISO": "PA",
+  "CountryNames": "Panama"
+  },
+  {
+    "id": 99,
+    "Country_EN": "El Salvador",
+    "Kraj": "El Salvador",
+    "Waluta": "USD",
+    "Code_ISO": "SV",
+  "CountryNames": "El Salvador"
+  },
+  {
+    "id": 100,
+    "Country_EN": "Algeria",
+    "Kraj": "Algeria",
+    "Waluta": "EUR",
+    "Code_ISO": "DZ",
+  "CountryNames": "Algeria"
+  },
+  {
+    "id": 101,
+    "Country_EN": "Angola",
+    "Kraj": "Angola",
+    "Waluta": "EUR",
+    "Code_ISO": "AO",
+  "CountryNames": "Angola"
+  },
+  {
+    "id": 102,
+    "Country_EN": "Benin",
+    "Kraj": "Benin",
+    "Waluta": "EUR",
+    "Code_ISO": "BJ",
+  "CountryNames": "Benin"
+  },
+  {
+    "id": 103,
+    "Country_EN": "Botswana",
+    "Kraj": "Botswana",
+    "Waluta": "EUR",
+    "Code_ISO": "BW",
+  "CountryNames": "Botswana"
+  },
+  {
+    "id": 104,
+    "Country_EN": "Burkina Faso",
+    "Kraj": "Burkina Faso",
+    "Waluta": "EUR",
+    "Code_ISO": "BF",
+  "CountryNames": "Burkina Faso"
+  },
+  {
+    "id": 105,
+    "Country_EN": "Burundi",
+    "Kraj": "Burundi",
+    "Waluta": "USD",
+    "Code_ISO": "BI",
+  "CountryNames": "Burundi"
+  },
+  {
+    "id": 106,
+    "Country_EN": "Chad",
+    "Kraj": "Chad",
+    "Waluta": "EUR",
+    "Code_ISO": "TD",
+  "CountryNames": "Chad"
+  },
+  {
+    "id": 107,
+    "Country_EN": "Djibouti",
+    "Kraj": "Djibouti",
+    "Waluta": "USD",
+    "Code_ISO": "DJ",
+  "CountryNames": "Djibouti"
+  },
+  {
+    "id": 108,
+    "Country_EN": "Egypt",
+    "Kraj": "Egypt",
+    "Waluta": "EUR",
+    "Code_ISO": "EG",
+  "CountryNames": "Egypt"
+  },
+  {
+    "id": 109,
+    "Country_EN": "Eritrea",
+    "Kraj": "Eritrea",
+    "Waluta": "USD",
+    "Code_ISO": "ER",
+  "CountryNames": "Eritrea"
+  },
+  {
+    "id": 110,
+    "Country_EN": "Ethiopia",
+    "Kraj": "Ethiopia",
+    "Waluta": "EUR",
+    "Code_ISO": "ET",
+  "CountryNames": "Ethiopia"
+  },
+  {
+    "id": 111,
+    "Country_EN": "Gabon",
+    "Kraj": "Gabon",
+    "Waluta": "EUR",
+    "Code_ISO": "GA",
+  "CountryNames": "Gabon"
+  },
+  {
+    "id": 112,
+    "Country_EN": "Gambia",
+    "Kraj": "Gambia",
+    "Waluta": "EUR",
+    "Code_ISO": "GM",
+  "CountryNames": "Gambia"
+  },
+  {
+    "id": 113,
+    "Country_EN": "Ghana",
+    "Kraj": "Ghana",
+    "Waluta": "EUR",
+    "Code_ISO": "GH",
+  "CountryNames": "Ghana"
+  },
+  {
+    "id": 114,
+    "Country_EN": "Guinea",
+    "Kraj": "Guinea",
+    "Waluta": "EUR",
+    "Code_ISO": "GN",
+  "CountryNames": "Guinea"
+  },
+  {
+    "id": 115,
+    "Country_EN": "Guinea-Bissau",
+    "Kraj": "Guinea-Bissau",
+    "Waluta": "EUR",
+    "Code_ISO": "GW",
+  "CountryNames": "Guinea-Bissau"
+  },
+  {
+    "id": 116,
+    "Country_EN": "South Africa",
+    "Kraj": "South Africa",
+    "Waluta": "EUR",
+    "Code_ISO": "ZA",
+  "CountryNames": "South Africa"
+  },
+  {
+    "id": 117,
+    "Country_EN": "South Sudan",
+    "Kraj": "South Sudan",
+    "Waluta": "USD",
+    "Code_ISO": "SS",
+  "CountryNames": "South Sudan"
+  },
+  {
+    "id": 118,
+    "Country_EN": "Cameroon",
+    "Kraj": "Cameroon",
+    "Waluta": "EUR",
+    "Code_ISO": "CM",
+  "CountryNames": "Cameroon"
+  },
+  {
+    "id": 119,
+    "Country_EN": "Cabo Verde",
+    "Kraj": "Cabo Verde",
+    "Waluta": "EUR",
+    "Code_ISO": "CV",
+  "CountryNames": "Cabo Verde"
+  },
+  {
+    "id": 120,
+    "Country_EN": "Kenya",
+    "Kraj": "Kenya",
+    "Waluta": "EUR",
+    "Code_ISO": "KE",
+  "CountryNames": "Kenya"
+  },
+  {
+    "id": 121,
+    "Country_EN": "Comoros",
+    "Kraj": "Comoros",
+    "Waluta": "USD",
+    "Code_ISO": "KM",
+  "CountryNames": "Comoros"
+  },
+  {
+    "id": 122,
+    "Country_EN": "Lesotho",
+    "Kraj": "Lesotho",
+    "Waluta": "EUR",
+    "Code_ISO": "LS",
+  "CountryNames": "Lesotho"
+  },
+  {
+    "id": 123,
+    "Country_EN": "Liberia",
+    "Kraj": "Liberia",
+    "Waluta": "EUR",
+    "Code_ISO": "LR",
+  "CountryNames": "Liberia"
+  },
+  {
+    "id": 124,
+    "Country_EN": "Libya",
+    "Kraj": "Libya",
+    "Waluta": "EUR",
+    "Code_ISO": "LY",
+  "CountryNames": "Libya"
+  },
+  {
+    "id": 125,
+    "Country_EN": "Madagascar",
+    "Kraj": "Madagascar",
+    "Waluta": "EUR",
+    "Code_ISO": "MG",
+  "CountryNames": "Madagascar"
+  },
+  {
+    "id": 126,
+    "Country_EN": "Malawi",
+    "Kraj": "Malawi",
+    "Waluta": "USD",
+    "Code_ISO": "MW",
+  "CountryNames": "Malawi"
+  },
+  {
+    "id": 127,
+    "Country_EN": "Mali",
+    "Kraj": "Mali",
+    "Waluta": "EUR",
+    "Code_ISO": "ML",
+  "CountryNames": "Mali"
+  },
+  {
+    "id": 128,
+    "Country_EN": "Morocco",
+    "Kraj": "Morocco",
+    "Waluta": "EUR",
+    "Code_ISO": "MA",
+  "CountryNames": "Morocco"
+  },
+  {
+    "id": 129,
+    "Country_EN": "Mauritania",
+    "Kraj": "Mauritania",
+    "Waluta": "EUR",
+    "Code_ISO": "MR",
+  "CountryNames": "Mauritania"
+  },
+  {
+    "id": 130,
+    "Country_EN": "Mauritius",
+    "Kraj": "Mauritius",
+    "Waluta": "EUR",
+    "Code_ISO": "MU",
+  "CountryNames": "Mauritius"
+  },
+  {
+    "id": 131,
+    "Country_EN": "Mozambique",
+    "Kraj": "Mozambique",
+    "Waluta": "EUR",
+    "Code_ISO": "MZ",
+  "CountryNames": "Mozambique"
+  },
+  {
+    "id": 132,
+    "Country_EN": "Namibia",
+    "Kraj": "Namibia",
+    "Waluta": "EUR",
+    "Code_ISO": "",
+  "CountryNames": "Namibia"
+  },
+  {
+    "id": 133,
+    "Country_EN": "Niger",
+    "Kraj": "Niger",
+    "Waluta": "EUR",
+    "Code_ISO": "NE",
+  "CountryNames": "Niger"
+  },
+  {
+    "id": 134,
+    "Country_EN": "Nigeria",
+    "Kraj": "Nigeria",
+    "Waluta": "EUR",
+    "Code_ISO": "NG",
+  "CountryNames": "Nigeria"
+  },
+  {
+    "id": 135,
+    "Country_EN": "Ivory Coast",
+    "Kraj": "Ivory Coast",
+    "Waluta": "EUR",
+    "Code_ISO": "CI",
+  "CountryNames": "Ivory Coast"
+  },
+  {
+    "id": 136,
+    "Country_EN": "Equatorial Guinea",
+    "Kraj": "Equatorial Guinea",
+    "Waluta": "EUR",
+    "Code_ISO": "GQ",
+  "CountryNames": "Equatorial Guinea"
+  },
+  {
+    "id": 137,
+    "Country_EN": "Rwanda",
+    "Kraj": "Rwanda",
+    "Waluta": "USD",
+    "Code_ISO": "RW",
+  "CountryNames": "Rwanda"
+  },
+  {
+    "id": 138,
+    "Country_EN": "Senegal",
+    "Kraj": "Senegal",
+    "Waluta": "EUR",
+    "Code_ISO": "SN",
+  "CountryNames": "Senegal"
+  },
+  {
+    "id": 139,
+    "Country_EN": "Seychelles",
+    "Kraj": "Seychelles",
+    "Waluta": "EUR",
+    "Code_ISO": "SC",
+  "CountryNames": "Seychelles"
+  },
+  {
+    "id": 140,
+    "Country_EN": "Sierra Leone",
+    "Kraj": "Sierra Leone",
+    "Waluta": "EUR",
+    "Code_ISO": "SL",
+  "CountryNames": "Sierra Leone"
+  },
+  {
+    "id": 141,
+    "Country_EN": "Somalia",
+    "Kraj": "Somalia",
+    "Waluta": "USD",
+    "Code_ISO": "SO",
+  "CountryNames": "Somalia"
+  },
+  {
+    "id": 142,
+    "Country_EN": "Central African Republic",
+    "Kraj": "Central African Republic",
+    "Waluta": "USD",
+    "Code_ISO": "CF",
+  "CountryNames": "Central African Republic"
+  },
+  {
+    "id": 143,
+    "Country_EN": "Sudan",
+    "Kraj": "Sudan",
+    "Waluta": "USD",
+    "Code_ISO": "SD",
+  "CountryNames": "Sudan"
+  },
+  {
+    "id": 144,
+    "Country_EN": "Tanzania",
+    "Kraj": "Tanzania",
+    "Waluta": "USD",
+    "Code_ISO": "TZ",
+  "CountryNames": "Tanzania"
+  },
+  {
+    "id": 145,
+    "Country_EN": "Togo",
+    "Kraj": "Togo",
+    "Waluta": "EUR",
+    "Code_ISO": "TG",
+  "CountryNames": "Togo"
+  },
+  {
+    "id": 146,
+    "Country_EN": "Tunisia",
+    "Kraj": "Tunisia",
+    "Waluta": "EUR",
+    "Code_ISO": "TN",
+  "CountryNames": "Tunisia"
+  },
+  {
+    "id": 147,
+    "Country_EN": "Uganda",
+    "Kraj": "Uganda",
+    "Waluta": "USD",
+    "Code_ISO": "UG",
+  "CountryNames": "Uganda"
+  },
+  {
+    "id": 148,
+    "Country_EN": "Zambia",
+    "Kraj": "Zambia",
+    "Waluta": "USD",
+    "Code_ISO": "ZM",
+  "CountryNames": "Zambia"
+  },
+  {
+    "id": 149,
+    "Country_EN": "Zimbabwe",
+    "Kraj": "Zimbabwe",
+    "Waluta": "USD",
+    "Code_ISO": "ZW",
+  "CountryNames": "Zimbabwe"
+  },
+  {
+    "id": 150,
+    "Country_EN": "New Zealand",
+    "Kraj": "New Zealand",
+    "Waluta": "USD",
+    "Code_ISO": "NZ",
+  "CountryNames": "New Zealand"
+  },
+  {
+    "id": 151,
+    "Country_EN": "Argentina",
+    "Kraj": "Argentina",
+    "Waluta": "USD",
+    "Code_ISO": "AR",
+  "CountryNames": "Argentina"
+  },
+  {
+    "id": 152,
+    "Country_EN": "Bolivia",
+    "Kraj": "Bolivia",
+    "Waluta": "USD",
+    "Code_ISO": "BO",
+  "CountryNames": "Bolivia"
+  },
+  {
+    "id": 153,
+    "Country_EN": "Brazil",
+    "Kraj": "Brazil",
+    "Waluta": "USD",
+    "Code_ISO": "BR",
+  "CountryNames": "Brazil"
+  },
+  {
+    "id": 154,
+    "Country_EN": "Ecuador",
+    "Kraj": "Ecuador",
+    "Waluta": "USD",
+    "Code_ISO": "EC",
+  "CountryNames": "Ecuador"
+  },
+  {
+    "id": 155,
+    "Country_EN": "Guyana",
+    "Kraj": "Guyana",
+    "Waluta": "USD",
+    "Code_ISO": "GY",
+  "CountryNames": "Guyana"
+  },
+  {
+    "id": 156,
+    "Country_EN": "Chile",
+    "Kraj": "Chile",
+    "Waluta": "USD",
+    "Code_ISO": "CL",
+  "CountryNames": "Chile"
+  },
+  {
+    "id": 157,
+    "Country_EN": "Colombia",
+    "Kraj": "Colombia",
+    "Waluta": "USD",
+    "Code_ISO": "CO",
+  "CountryNames": "Colombia"
+  },
+  {
+    "id": 158,
+    "Country_EN": "Paraguay",
+    "Kraj": "Paraguay",
+    "Waluta": "USD",
+    "Code_ISO": "PY",
+  "CountryNames": "Paraguay"
+  },
+  {
+    "id": 159,
+    "Country_EN": "Peru",
+    "Kraj": "Peru",
+    "Waluta": "USD",
+    "Code_ISO": "PE",
+  "CountryNames": "Peru"
+  },
+  {
+    "id": 160,
+    "Country_EN": "Suriname",
+    "Kraj": "Suriname",
+    "Waluta": "USD",
+    "Code_ISO": "SR",
+  "CountryNames": "Suriname"
+  },
+  {
+    "id": 161,
+    "Country_EN": "Uruguay",
+    "Kraj": "Uruguay",
+    "Waluta": "USD",
+    "Code_ISO": "UY",
+  "CountryNames": "Uruguay"
+  },
+  {
+    "id": 162,
+    "Country_EN": "Venezuela",
+    "Kraj": "Venezuela",
+    "Waluta": "USD",
+    "Code_ISO": "VE",
+  "CountryNames": "Venezuela"
+  },
+  {
+    "id": 163,
+    "Country_EN": "Bermuda",
+    "Kraj": "Bermuda",
+    "Waluta": "USD",
+    "Code_ISO": "BM",
+  "CountryNames": "Bermuda"
+  },
+  {
+    "id": 164,
+    "Country_EN": "Brunei Darussalam",
+    "Kraj": "Brunei Darussalam",
+    "Waluta": "USD",
+    "Code_ISO": "BN",
+  "CountryNames": "Brunei Darussalam"
+  },
+  {
+    "id": 165,
+    "Country_EN": "Hong Kong",
+    "Kraj": "Hong Kong",
+    "Waluta": "EUR",
+    "Code_ISO": "HK",
+  "CountryNames": "Hong Kong"
+  },
+  {
+    "id": 166,
+    "Country_EN": "Republic of the Congo",
+    "Kraj": "Republic of the Congo",
+    "Waluta": "USD",
+    "Code_ISO": "CG",
+  "CountryNames": "Republic of the Congo"
+  },
+  {
+    "id": 167,
+    "Country_EN": "the Democratic Republic of the Congo",
+    "Kraj": "the Democratic Republic of the Congo",
+    "Waluta": "USD",
+    "Code_ISO": "CD",
+  "CountryNames": "the Democratic Republic of the Congo"
+  },
+  {
+    "id": 168,
+    "Country_EN": "North Korea (the Democratic People's Republic of Korea)",
+    "Kraj": "North Korea",
+    "Waluta": "EUR",
+    "Code_ISO": "KP",
+  "CountryNames": "North Korea (the Democratic People's Republic of Korea)"
+  },
+  {
+    "id": 169,
+    "Country_EN": "South Korea (the Republic of Korea)",
+    "Kraj": "South Korea",
+    "Waluta": "EUR",
+    "Code_ISO": "KR",
+  "CountryNames": "South Korea (the Republic of Korea)"
+  },
+  {
+    "id": 170,
+    "Country_EN": "the Lao People's Democratic Republic",
+    "Kraj": "Laos",
+    "Waluta": "USD",
+    "Code_ISO": "LA",
+  "CountryNames": "the Lao People's Democratic Republic"
+  },
+  {
+    "id": 171,
+    "Country_EN": "Macao",
+    "Kraj": "Macao",
+    "Waluta": "EUR",
+    "Code_ISO": "MO",
+  "CountryNames": "Macao"
+  },
+  {
+    "id": 172,
+    "Country_EN": "Sao Tome and Principe",
+    "Kraj": "Sao Tome and Principe",
+    "Waluta": "EUR",
+    "Code_ISO": "ST",
+  "CountryNames": "Sao Tome and Principe"
+  },
+  {
+    "id": 173,
+    "Country_EN": "Swaziland",
+    "Kraj": "Swaziland",
+    "Waluta": "EUR",
+    "Code_ISO": "SZ",
+  "CountryNames": "Swaziland"
+  },
+  {
+    "id": 174,
+    "Country_EN": "Syrian Arab Republic",
+    "Kraj": "Syrian Arab Republic",
+    "Waluta": "EUR",
+    "Code_ISO": "SY",
+  "CountryNames": "Syrian Arab Republic"
+  },
+  {
+    "id": 175,
+    "Country_EN": "Viet Nam",
+    "Kraj": "Viet Nam",
+    "Waluta": "EUR",
+    "Code_ISO": "VN",
+  "CountryNames": "Viet Nam"
+  }
+]

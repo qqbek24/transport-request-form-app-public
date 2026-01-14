@@ -435,7 +435,7 @@ Token Manager is a singleton class that automatically manages SharePoint tokens:
 
 class TokenManager:
     """
-    Singleton - jedna instancja na całą aplikację
+    Singleton - one instance for entire application
     
     Features:
     - Automatic token fetching from REST API
@@ -537,7 +537,7 @@ application: your-app-name
 
 def get_access_token() -> str:
     """
-    Universal token getter - próbuje Token Manager, fallback na manual token
+    Universal token getter - tries Token Manager, fallback to manual token
     
     Priority:
     1. Token Manager (if enabled in config.yaml)
@@ -578,7 +578,7 @@ sharepoint.insert_row_to_table(...)
 
 #### GET `/api/token/info`
 
-Sprawdź status aktualnego tokena
+Check current token status
 
 **Request:**
 ```bash
@@ -607,13 +607,13 @@ curl http://localhost:8010/api/token/info
 ```
 
 **Fields:**
-- `token_manager.enabled`: Czy Token Manager jest aktywny
-- `token_manager.config`: Konfiguracja Token Managera
-- `token.source`: `"token_manager"` lub `"environment_variable"`
-- `token.expires_at`: Czas wygaśnięcia tokena (estimate: current + 1h)
-- `token.is_valid`: Czy token jest aktualny
-- `token.token_age_minutes`: Wiek tokena w minutach
-- `token.token_preview`: Pierwsze 50 znaków tokena
+- `token_manager.enabled`: Whether Token Manager is active
+- `token_manager.config`: Token Manager configuration
+- `token.source`: `"token_manager"` or `"environment_variable"`
+- `token.expires_at`: Token expiration time (estimate: current + 1h)
+- `token.is_valid`: Whether token is valid
+- `token.token_age_minutes`: Token age in minutes
+- `token.token_preview`: First 50 characters of token
 
 #### POST `/api/token/refresh`
 
@@ -759,17 +759,17 @@ DEBUG_SECRET_KEY=TestPassword
 
 ```bash
 # ========================================
-# BACKEND .env (tylko dla: python backend/fastapi_app.py)
+# BACKEND .env (only for: python backend/fastapi_app.py)
 # ========================================
 
 # Token Manager
-RPA_BOT_PASSWORD=Twoje_Hasło
+RPA_BOT_PASSWORD=Your_Password
 
 # Fallback manual token
 SHAREPOINT_ACCESS_TOKEN=
 
 # Debug mode
-DEBUG_SECRET_KEY=Twoje_Hasło_debug
+DEBUG_SECRET_KEY=Your_Debug_Password
 ```
 
 ### 🔒 Security
@@ -821,7 +821,7 @@ notepad backend\.env
 
 ### Microsoft Graph API
 
-Aplikacja używa **Microsoft Graph API** do interakcji z SharePoint Excel:
+The application uses **Microsoft Graph API** to interact with SharePoint Excel:
 
 **Base URL:** `https://graph.microsoft.com/v1.0`
 
@@ -853,7 +853,7 @@ Aplikacja używa **Microsoft Graph API** do interakcji z SharePoint Excel:
 - ❌ Requires Excel formatted as **Table** (Insert → Table)
 - ❌ More API calls (discover table → insert row)
 
-**Implementacja:**
+**Implementation:**
 
 ```python
 # backend/sharepoint_helper.py
@@ -902,7 +902,7 @@ def insert_row_to_table(self, worksheet_name: str, table_name: str, values: list
 - ❌ Slower - downloads entire file + upload
 - ❌ Race conditions with concurrent access
 
-**Implementacja:**
+**Implementation:**
 
 ```python
 def download_excel_file(self, file_path: str) -> bytes:
@@ -956,7 +956,7 @@ sharepoint.upload_excel_file("transport_requests.xlsx", output.getvalue())
 
 ### Fuzzy Column Matching
 
-Aplikacja automatycznie dopasowuje nazwy kolumn form → Excel (case-insensitive, ignoruje spacje/myślniki):
+The application automatically matches column names form → Excel (case-insensitive, ignores spaces/hyphens):
 
 ```python
 def fuzzy_match_columns(form_data: dict, excel_headers: list, mapping: dict) -> dict:
@@ -1620,7 +1620,7 @@ timestamp,request_id,delivery_note,truck_plates,carrier_country,status,error
 
 **File:** `transport_app_YYYYMMDD.jsonl`
 
-**Format:** Jeden JSON object na linię
+**Format:** One JSON object per line
 
 ```json
 {"timestamp": "2025-11-17T14:30:00.123", "level": "INFO", "message": "Form submission received", "request_id": "TR-20251117-001"}
@@ -1677,7 +1677,7 @@ docker compose logs backend > backend_logs.txt
 
 ```bash
 # .env
-DEBUG_SECRET_KEY=Twoje_Hasło_debug
+DEBUG_SECRET_KEY=Your_Debug_Password
 ```
 
 **Endpoints:**

@@ -4,17 +4,17 @@
 > System automatically synchronizes data with SharePoint Excel and sends email notifications.
 
 **Latest Features:**
-- ✅ **Async Parallel Upload** - 3x faster attachment processing (3 files simultaneously)
-- ✅ **MS Graph Email** - Automatic confirmation emails using same token as SharePoint
-- ✅ **Background Tasks** - Non-blocking submission (instant response to user)
-- ✅ **Excel API** - Works even when file is open by another user
-- ✅ **Token Manager** - Automatic token refresh, no manual copying needed
+-  **Async Parallel Upload** - 3x faster attachment processing (3 files simultaneously)
+-  **MS Graph Email** - Automatic confirmation emails using same token as SharePoint
+-  **Background Tasks** - Non-blocking submission (instant response to user)
+-  **Excel API** - Works even when file is open by another user
+-  **Token Manager** - Automatic token refresh, no manual copying needed
 
 ---
 
 ## Quick Start
 
-### 📦 Docker (Recommended)
+### Docker (Recommended)
 
 ```powershell
 # 1. Copy and configure .env
@@ -29,19 +29,19 @@ docker compose up --build
 # Backend:  http://localhost:8010/docs
 ```
 
-### 🏭 Jenkins Deployment
+### Jenkins Deployment
 
 ```
 1. Jenkins → "transport-form-app" job
 2. Build with Parameters:
-   ✅ USE_TOKEN_MANAGER = true
-   ✅ ACTION = deploy
+   -  USE_TOKEN_MANAGER = true
+   -  ACTION = deploy
 3. Build
 ```
 
 ---
 
-## 📋 Requirements
+## Requirements
 
 - **Docker** 20+ & Docker Compose
 - **Jenkins** (production) with credentials: `webapp-transport-form-app`
@@ -49,15 +49,15 @@ docker compose up --build
 
 ---
 
-## 🔑 Token Manager - Automatic Tokens
+## Token Manager - Automatic Tokens
 
 **No need to manually copy SharePoint tokens anymore!**
 
 Token Manager automatically:
-- ✅ Fetches token from REST API on first use
-- ✅ Caches token for 1 hour
-- ✅ Auto-refreshes after expiration
-- ✅ Fallback to manual token if API unavailable
+- Fetches token from REST API on first use
+- Caches token for 1 hour
+- Auto-refreshes after expiration
+- Fallback to manual token if API unavailable
 
 **Configuration:** 
 - File: `backend/config.yaml`
@@ -66,26 +66,26 @@ Token Manager automatically:
 
 ---
 
-## ⚡ Async Parallel Upload - High Performance
+## Async Parallel Upload - High Performance
 
 **NEW: Attachments upload 3x FASTER!**
 
 Performance Improvements:
-- ✅ **Parallel upload**: 3 files simultaneously (ThreadPoolExecutor)
-- ✅ **Non-blocking**: User gets immediate response (~100-200ms)
-- ✅ **Background processing**: Uploads happen asynchronously
-- ✅ **No timeout**: Even with 10+ large attachments
-- ✅ **Smart order**: Excel saves FIRST (reliable), then attachments, then email
+-  **Parallel upload**: 3 files simultaneously (ThreadPoolExecutor)
+-  **Non-blocking**: User gets immediate response (~100-200ms)
+-  **Background processing**: Uploads happen asynchronously
+-  **No timeout**: Even with 10+ large attachments
+-  **Smart order**: Excel saves FIRST (reliable), then attachments, then email
 
 **Before vs After:**
 ```
 BEFORE (synchronous):
 5 files × 3s = 15s → User waits
-10 files × 3s = 30s → TIMEOUT ❌
+10 files × 3s = 30s → TIMEOUT
 
 AFTER (async parallel):
-5 files / 3 workers = ~5s → User sees success immediately ✅
-10 files / 3 workers = ~10s → No timeout ✅
+5 files / 3 workers = ~5s → User sees success immediately
+10 files / 3 workers = ~10s → No timeout
 ```
 
 **Technical Details:**
@@ -96,18 +96,18 @@ AFTER (async parallel):
 
 ---
 
-## 📧 Email Confirmations - Automatic Notifications
+## Email Confirmations - Automatic Notifications
 
 **After each successful submission, user receives confirmation email!**
 
 Email Features:
-- ✅ Automatic email to user after successful submit
-- ✅ Contains all form data (Request ID, delivery note, etc.)
-- ✅ CC to configurable company address (in config.yaml)
-- ✅ Professional HTML template with branding
-- ✅ **Attachment status**: Success/Failed for each file
-- ✅ Non-blocking: Doesn't fail submission if email fails
-- ✅ **Uses MS Graph API - same token as SharePoint!** (no extra credentials)
+- Automatic email to user after successful submit
+- Contains all form data (Request ID, delivery note, etc.)
+- CC to configurable company address (in config.yaml)
+- Professional HTML template with branding
+- **Attachment status**: Success/Failed for each file
+- Non-blocking: Doesn't fail submission if email fails
+- **Uses MS Graph API - same token as SharePoint!** (no extra credentials)
 
 **Configuration:**
 - Method: **MS Graph API** (not SMTP)
@@ -130,7 +130,7 @@ email:
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 transport-form-app/
@@ -171,7 +171,7 @@ transport-form-app/
 
 ---
 
-## ⚙️ Configuration
+## Configuration
 
 ### 1. Environment Variables (`.env`)
 
@@ -220,7 +220,7 @@ Password: Your_Password
 
 ---
 
-## 🧪 Testing
+## Testing
 
 ```powershell
 # Unit tests
@@ -241,7 +241,7 @@ pytest tests/test_integration.py -v
 
 ---
 
-## 📊 Monitoring
+## Monitoring
 
 | Endpoint | Description |
 |----------|-------------|
@@ -265,7 +265,7 @@ backend/logs/
 
 ---
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 ### Problem: Token Manager not working (401 error)
 
@@ -304,14 +304,14 @@ docker compose up --build --force-recreate
 
 ---
 
-## 🌍 Internationalization (i18n)
+## Internationalization (i18n)
 
 **Current Status:** Partially implemented (form labels only)
 
-- ✅ Form labels externalized: `frontend/public/form-labels.json`
-- ❌ UI messages still hardcoded
-- ❌ Email template in English only
-- ❌ No language selector
+- Form labels externalized: `frontend/public/form-labels.json`
+- UI messages still hardcoded
+- Email template in English only
+- No language selector
 
 **Roadmap:** See [TODO_INTERNATIONALIZATION.md](./TODO_INTERNATIONALIZATION.md) for:
 - Complete i18n analysis (~360 texts)
@@ -338,12 +338,12 @@ docker compose up --build --force-recreate
 
 ---
 
-## 📚 Documentation
+## Documentation
 
 | File | Description |
 |------|-------------|
-| **[DEVELOPER.md](./DEVELOPER.md)** | 📖 Complete technical documentation for developers |
-| **[TODO_INTERNATIONALIZATION.md](./TODO_INTERNATIONALIZATION.md)** | 🌍 i18n implementation plan |
-| `backend/config.yaml` | ⚙️ SharePoint, Email, Token Manager configuration |
-| `.env.example` | 📝 Environment variables template |
-| `TESTING.md` | 🧪 Testing guide |
+| **[DEVELOPER.md](./DEVELOPER.md)** | Complete technical documentation for developers |
+| **[TODO_INTERNATIONALIZATION.md](./TODO_INTERNATIONALIZATION.md)** | i18n implementation plan |
+| `backend/config.yaml` | SharePoint, Email, Token Manager configuration |
+| `.env.example` | Environment variables template |
+| `TESTING.md` | Testing guide |

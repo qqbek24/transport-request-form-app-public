@@ -188,9 +188,9 @@ sharepoint:
 ```
 
 **Limitations:**
-- ❌ Doesn't work on open Excel files (error 423 Locked)
-- ❌ Slower - downloads entire file, modifies, uploads back
-- ❌ Race conditions with concurrent access
+- Doesn't work on open Excel files (error 423 Locked)
+- Slower - downloads entire file, modifies, uploads back
+- Race conditions with concurrent access
 
 ---
 

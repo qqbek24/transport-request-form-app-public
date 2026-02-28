@@ -1,8 +1,8 @@
-# 🚀 Jenkins CI/CD Directory
+# Jenkins CI/CD Directory
 
 This directory contains all Jenkins pipeline configurations and deployment scripts for the UIT RO Transport Request application.
 
-## 📂 Structure
+## Structure
 
 ```
 jenkins/
@@ -11,21 +11,21 @@ jenkins/
 └── shutdown.sh                        # Shutdown script
 ```
 
-## 🔄 Pipelines
+## Pipelines
 
 ### 1. Complete Pipeline (`jenkins-pipeline-complete.groovy`)
 
 **Primary deployment pipeline** - handles full application lifecycle.
 
 **Features:**
-- ✅ Git checkout with branch selection
-- ✅ Docker image building (with/without cache)
-- ✅ SSL certificate management
-- ✅ Token Manager configuration
-- ✅ Data backup/restore
-- ✅ Container orchestration
-- ✅ Health checks
-- ✅ Automatic rollback on failure
+- Git checkout with branch selection
+- Docker image building (with/without cache)
+- SSL certificate management
+- Token Manager configuration
+- Data backup/restore
+- Container orchestration
+- Health checks
+- Automatic rollback on failure
 
 **Parameters:**
 - `BRANCH` - Git branch to deploy (default: `dev`)
@@ -58,10 +58,10 @@ Jenkins → transport-request-form-app job
 **Graceful shutdown pipeline** - stops application safely.
 
 **Features:**
-- ✅ Data backup before shutdown
-- ✅ Graceful container stop
-- ✅ Resource cleanup
-- ✅ Log preservation
+- Data backup before shutdown
+- Graceful container stop
+- Resource cleanup
+- Log preservation
 
 **Usage:**
 ```
@@ -89,7 +89,7 @@ cd /path/to/transport-request-form-app
 ./jenkins/shutdown.sh
 ```
 
-## 🔐 Required Credentials
+## Required Credentials
 
 ### 1. Git Access
 - **ID**: `c5526276-84a5-4328-9968-b0ff64ea094f`
@@ -103,7 +103,7 @@ cd /path/to/transport-request-form-app
 - **Username**: `transport-app@yourdomain.com`
 - **Used for**: Token Manager automatic token fetching
 
-## 📋 Pipeline Flow
+## Pipeline Flow
 
 ```mermaid
 graph TD
@@ -120,7 +120,7 @@ graph TD
     E --> L[Cleanup]
 ```
 
-## 🛠️ Development
+## Development
 
 ### Testing Pipeline Locally
 
@@ -157,7 +157,7 @@ jenkins-linter jenkins/jenkins-pipeline-complete.groovy
    - Jenkins will auto-detect changes
    - Run test deployment
 
-## 🔧 Troubleshooting
+## Troubleshooting
 
 ### Issue: "Permission denied" on shutdown.sh
 ```bash
@@ -193,7 +193,7 @@ docker compose ps
 curl http://localhost:8010/
 ```
 
-## 📊 Monitoring
+## Monitoring
 
 ### Pipeline Logs
 - Jenkins → transport-request-form-app → Build History
@@ -211,7 +211,7 @@ docker compose logs -f frontend
 - Backend: http://localhost:8010/
 - Frontend: http://localhost:8011/
 
-## 🎯 Best Practices
+## Best Practices
 
 1. **Always test on `dev` branch first**
 2. **Use Token Manager** (don't use manual tokens)
@@ -219,7 +219,7 @@ docker compose logs -f frontend
 4. **Monitor first deployment** after pipeline changes
 5. **Keep credentials secure** (never commit to git)
 
-## 📚 Related Documentation
+## Related Documentation
 
 - Main README: `../README.md`
 - Developer Guide: `../DEVELOPER.md`

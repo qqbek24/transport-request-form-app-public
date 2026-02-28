@@ -192,7 +192,7 @@ Debug mode is controlled by environment variable:
 
 ```bash
 # .env file
-DEBUG_SECRET_KEY=xK9vZmR3pL8qY00000000B0cE4fU7gT9hV3iD2j
+DEBUG_SECRET_KEY=xK9vZmR3pL8qY00000000B0cE4fU7gT9hV3iD2j...
 ```
 
 **Docker:**

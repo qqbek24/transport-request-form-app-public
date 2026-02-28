@@ -1,18 +1,18 @@
 # TODO: Internationalization (i18n) Implementation
 
-## 📊 Current State Analysis
+## Current State Analysis
 
-### ✅ Already Externalized
+### Already Externalized
 - **Form labels** (`frontend/public/form-labels.json`): 25 texts
   - Page title, field labels, buttons, file upload messages
 
 ---
 
-## ❌ Hardcoded Texts Requiring i18n
+## Hardcoded Texts Requiring i18n
 
 ### Priority by Impact:
 
-#### **🔴 PRIORITY 1: Critical User-Facing** (~80 texts)
+#### ** PRIORITY 1: Critical User-Facing** (~80 texts)
 
 **1. App.jsx** (3 texts):
 ```jsx
@@ -55,7 +55,7 @@
 
 ---
 
-#### **🟡 PRIORITY 2: Admin/Support Features** (~80 texts)
+#### ** PRIORITY 2: Admin/Support Features** (~80 texts)
 
 **5. LogsViewer.jsx** (80+ texts):
 - Main sections:
@@ -74,7 +74,7 @@
 
 ---
 
-#### **⚪ PRIORITY 3: Technical/Optional** (~200 texts)
+#### ** PRIORITY 3: Technical/Optional** (~200 texts)
 
 **6. Backend API Messages** (`backend/fastapi_app.py`):
 - Error responses:
@@ -95,7 +95,7 @@
 
 ---
 
-## 📁 Proposed Folder Structure
+## Proposed Folder Structure
 
 ```
 frontend/
@@ -115,7 +115,7 @@ backend/
 
 ---
 
-## 🎨 Example Locale File Structure
+## Example Locale File Structure
 
 ### `frontend/public/locales/en.json`:
 ```json
@@ -256,7 +256,7 @@ backend/
 
 ---
 
-## 🔧 Implementation Libraries
+## Implementation Libraries
 
 ### Frontend (React):
 ```bash
@@ -264,11 +264,11 @@ npm install react-i18next i18next i18next-http-backend
 ```
 
 **Features:**
-- ✅ Automatic locale file loading
-- ✅ Variable interpolation: `{{requestId}}`
-- ✅ Pluralization: `{{count}} file(s)`
-- ✅ Browser language detection
-- ✅ Persistent language selection (localStorage)
+- Automatic locale file loading
+- Variable interpolation: `{{requestId}}`
+- Pluralization: `{{count}} file(s)`
+- Browser language detection
+- Persistent language selection (localStorage)
 
 ### Backend (Python):
 ```bash
@@ -360,10 +360,10 @@ class I18n:
    - `FileUpload.jsx`: Use `t('form.validation.invalidFileType')`
 
 **Deliverables:**
-- ✅ English locale file (complete)
-- ✅ Polish locale file (translated)
-- ✅ Language selector in header
-- ✅ Form fully translatable
+- English locale file (complete)
+- Polish locale file (translated)
+- Language selector in header
+- Form fully translatable
 
 ---
 
@@ -416,9 +416,9 @@ class I18n:
 4. Detect user language from form submission (`data.get('language', 'en')`)
 
 **Deliverables:**
-- ✅ Backend locale files (en.json, pl.json)
-- ✅ Email template with i18n support
-- ✅ Language detection in email sending
+- Backend locale files (en.json, pl.json)
+- Email template with i18n support
+- Language detection in email sending
 
 ---
 
@@ -431,15 +431,5 @@ class I18n:
 3. Translate debug/admin messages
 
 **Deliverables:**
-- ✅ LogsViewer fully translated
-- ✅ Admin panel in multiple languages
-
----
-
-## 📝 Notes
-
-- Current `form-labels.json` can be migrated to `locales/en.json` structure
-- Email template needs Jinja2 template engine for i18n
-- Backend logs can remain in English (technical audience)
-- Frontend build size increase: ~5-10KB per language
-- No performance impact (files loaded on-demand)
+- LogsViewer fully translated
+- Admin panel in multiple languages

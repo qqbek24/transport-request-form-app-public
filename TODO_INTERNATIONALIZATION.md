@@ -26,14 +26,14 @@
   - "Invalid email format"
   - "is required" (11× - dynamically appended)
   - "Loading form..."
-  - "⚠ Configuration Error"
+  - "Configuration Error"
   - "Please contact system administrator or check browser console for details."
   
 - Success/Error messages:
   - "Form submitted successfully! Request ID: {id}"
-  - "⚠ Warning: Excel file is currently LOCKED (open by another user)."
+  - "Warning: Excel file is currently LOCKED (open by another user)."
   - "Data saved locally. Please close the Excel file and the system will retry automatically."
-  - "⚠ Warning: Data saved locally, but SharePoint update failed."
+  - "Warning: Data saved locally, but SharePoint update failed."
   - "Check browser console for details or use 'SharePoint Status' in Logs."
   - "Error submitting form: {error}. Please try again."
 
@@ -46,7 +46,7 @@
 
 **4. Email Template** (`backend/res/confirmation_email.html`) (30 texts):
 - "Transport Request Confirmation" (title)
-- "✓ Request Received Successfully"
+- "Request Received Successfully"
 - "Your transport request has been successfully submitted"
 - "Request Details", "Delivery Note", "Truck Plates", etc. (15+ fields)
 - "Attachments" section

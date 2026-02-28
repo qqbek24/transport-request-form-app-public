@@ -7,10 +7,10 @@
 ## Overview
 
 This application integrates with SharePoint using **Microsoft Graph API** for:
-- ✅ **Excel synchronization** - Automatic data insertion to SharePoint Excel
-- ✅ **File uploads** - Attachment storage in SharePoint folders
-- ✅ **Email notifications** - MS Graph API for confirmation emails
-- ✅ **Token Manager** - Automatic token refresh (no manual copying needed!)
+- **Excel synchronization** - Automatic data insertion to SharePoint Excel
+- **File uploads** - Attachment storage in SharePoint folders
+- **Email notifications** - MS Graph API for confirmation emails
+- **Token Manager** - Automatic token refresh (no manual copying needed!)
 
 ---
 
@@ -21,10 +21,10 @@ This application integrates with SharePoint using **Microsoft Graph API** for:
 **Automatic token fetching from REST API - No manual token copying!**
 
 Token Manager automatically:
-- ✅ Fetches token from REST API on first use
-- ✅ Caches token for 1 hour
-- ✅ Auto-refreshes after expiration
-- ✅ Fallback to manual token if API unavailable
+- Fetches token from REST API on first use
+- Caches token for 1 hour
+- Auto-refreshes after expiration
+- Fallback to manual token if API unavailable
 
 **Setup:**
 
@@ -522,7 +522,7 @@ WARNING: Email send failed
 
 ---
 
-## 🛑 Disabling SharePoint
+## Disabling SharePoint
 
 To temporarily disable integration while keeping application running:
 
@@ -533,10 +533,10 @@ sharepoint:
 ```
 
 Application will work normally, saving only to local JSON backup:
-- ✅ Form submission works
-- ✅ JSON backup saved to `/tmp/transport_requests.json`
-- ❌ No SharePoint sync
-- ❌ No emails sent
+- Form submission works
+- JSON backup saved to `/tmp/transport_requests.json`
+- No SharePoint sync
+- No emails sent
 
 **Re-enable:**
 ```yaml

@@ -1,14 +1,14 @@
-# 🔐 Debug Mode - Admin Guide
+# Debug Mode - Admin Guide
 
 ## What is Debug Mode?
 
 Debug Mode provides access to:
-- 📋 **Logs Viewer** - real-time application log viewing (JSONL format)
-- 📄 **JSON Data Viewer** - view and manage `transport_requests.json` records
-- 🔗 **SharePoint Status** - connection diagnostics and token validation
-- 🧹 **Attachment Cleanup** - manual cleanup of old SharePoint files (90+ days)
+- **Logs Viewer** - real-time application log viewing (JSONL format)
+- **JSON Data Viewer** - view and manage `transport_requests.json` records
+- **SharePoint Status** - connection diagnostics and token validation
+- **Attachment Cleanup** - manual cleanup of old SharePoint files (90+ days)
 
-**⚠️ IMPORTANT:** Debug features are hidden from regular users. Access requires knowledge of the secret key.
+**IMPORTANT:** Debug features are hidden from regular users. Access requires knowledge of the secret key.
 
 ---
 
@@ -28,7 +28,7 @@ python -c "import secrets; print(secrets.token_urlsafe(32))"
 xK9vZmR3pL8qYnJ2tA50000000cE4fU7gT9hV3iD2j
 ```
 
-**💾 SAVE THIS KEY** - you'll need it for every deploy!
+**SAVE THIS KEY** - you'll need it for every deploy!
 
 ---
 
@@ -36,7 +36,7 @@ xK9vZmR3pL8qYnJ2tA50000000cE4fU7gT9hV3iD2j
 
 When running Jenkins pipeline:
 
-1. Find parameter **🔐 DEBUG_SECRET_KEY**
+1. Find parameter **DEBUG_SECRET_KEY**
 2. Paste your generated key there
 3. **DO NOT SHARE THIS KEY WITH ANYONE!**
 
@@ -56,7 +56,7 @@ After application deployment:
 
 3. A popup will appear requesting the key:
    ```
-   🔐 Debug Access
+   Debug Access
    Enter debug secret key to access logs and diagnostic tools:
    [●●●●●●●●●●●●●●●●●●●●]
    ✓ OK    ✖ Cancel
@@ -64,11 +64,11 @@ After application deployment:
 
 4. Enter your key (same as in Jenkins)
 
-5. If correct → you'll see **📋 Logs** button in upper right corner
+5. If correct → you'll see **Logs** button in upper right corner
 
 ---
 
-## 📋 Debug Features
+## Debug Features
 
 ### Logs Viewer
 - **CSV Logs** - form submission history
@@ -102,25 +102,25 @@ After application deployment:
 
 ---
 
-## 🔒 Security
+## Security
 
-✅ **Key NOT visible in URL** (only `?debug=true`)  
-✅ **Key NOT saved in browser history**  
-✅ **Session token expires on tab close**  
-✅ **Backend logs all access attempts**  
-✅ **Without key → 403 Forbidden on all debug endpoints**  
+- **Key NOT visible in URL** (only `?debug=true`)  
+- **Key NOT saved in browser history**  
+- **Session token expires on tab close**  
+- **Backend logs all access attempts**  
+- **Without key → 403 Forbidden on all debug endpoints**  
 
 ---
 
-## 🛠️ How to Disable Debug Mode?
+## How to Disable Debug Mode?
 
 In Jenkins **leave DEBUG_SECRET_KEY field empty** → debug features will be unavailable for everyone.
 
 ---
 
-## 📌 Usage Examples
+## Usage Examples
 
-### ✅ Debug Mode Enabled (maintenance)
+### Debug Mode Enabled (maintenance)
 ```bash
 Jenkins parameters:
   USE_TOKEN_MANAGER: true
@@ -134,7 +134,7 @@ Jenkins parameters:
 
 ---
 
-### ❌ Debug Mode Disabled (production)
+### Debug Mode Disabled (production)
 ```bash
 Jenkins parameters:
   USE_TOKEN_MANAGER: true
@@ -147,12 +147,12 @@ Jenkins parameters:
 
 ---
 
-## 🔍 Troubleshooting
+## Troubleshooting
 
 ### Can't login to debug mode
 - Check if key in Jenkins is identical to what you're entering
 - Check DevTools Console (F12) for errors
-- Backend logs will show authorization attempts: `🔒 Debug access denied (invalid key)`
+- Backend logs will show authorization attempts: `Debug access denied (invalid key)`
 
 ### Logs button doesn't appear after entering key
 - Refresh page (F5) and try again
@@ -170,13 +170,13 @@ Jenkins parameters:
 
 ---
 
-## 📝 Access Logs
+## Access Logs
 
 Backend logs all debug mode access attempts:
 
 ```json
-{"level": "INFO", "message": "🔓 Debug access granted", "token": "a1b2c3d4..."}
-{"level": "WARNING", "message": "🔒 Debug access denied (invalid key)"}
+{"level": "INFO", "message": "Debug access granted", "token": "a1b2c3d4..."}
+{"level": "WARNING", "message": "Debug access denied (invalid key)"}
 ```
 
 Check logs in **Logs Viewer** or directly in container:
@@ -186,7 +186,7 @@ docker exec transport-form-app-backend-1 tail -f /app/logs/transport_app_YYYYMMD
 
 ---
 
-## 🔑 Environment Variable
+## Environment Variable
 
 Debug mode is controlled by environment variable:
 
@@ -209,7 +209,7 @@ docker exec transport-form-app-backend-1 env | grep DEBUG_SECRET_KEY
 
 ---
 
-## 🧹 Attachment Cleanup Configuration
+## Attachment Cleanup Configuration
 
 Configure retention period in `backend/config.yaml`:
 
@@ -233,7 +233,7 @@ docker exec transport-form-app-backend-1 grep "Attachment cleanup" /app/logs/tra
 
 ---
 
-## 🎯 Summary
+## Summary
 
 1. **Generate key** once (save it securely)
 2. **Paste to Jenkins** on every deploy (only when you need debug)
@@ -244,7 +244,7 @@ docker exec transport-form-app-backend-1 grep "Attachment cleanup" /app/logs/tra
 
 ---
 
-## 📚 Related Documentation
+## Related Documentation
 
 - **[DEVELOPER.md](./DEVELOPER.md)** - Full technical documentation
 - **[README.md](./README.md)** - User documentation

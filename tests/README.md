@@ -1,8 +1,8 @@
-# 🧪 Tests Directory
+# Tests Directory
 
 This directory contains all test files for the UIT RO Transport Request application.
 
-## 📂 Structure
+## Structure
 
 ```
 tests/
@@ -17,7 +17,7 @@ tests/
 └── run_tests.sh                 # Linux/Mac test runner
 ```
 
-## 🚀 Running Tests
+## Running Tests
 
 ### Quick Start (from project root)
 ```powershell
@@ -42,7 +42,7 @@ cd tests
 ./run_tests.sh all
 ```
 
-## 📋 Test Types
+## Test Types
 
 ### 1. API Tests (`test_api_submit.py`)
 - Tests REST API endpoints
@@ -70,7 +70,7 @@ cd tests
 - Basic functionality checks
 - Can run without external dependencies
 
-## ⚙️ Configuration
+## Configuration
 
 ### pytest.ini
 ```ini
@@ -82,7 +82,7 @@ python_files = test_*.py *_test.py
 ### Test Data
 - `test_data.json` - Sample transport requests for testing
 
-## 🔧 Troubleshooting
+## Troubleshooting
 
 **Issue**: `ModuleNotFoundError: No module named 'pytest'`
 ```powershell
@@ -104,7 +104,7 @@ docker compose up -d backend
 python backend/fastapi_app.py
 ```
 
-## 📊 Coverage
+## Coverage
 
 Current coverage targets:
 - **Backend**: 91% (target: 80%+)
@@ -116,7 +116,7 @@ python -m pytest tests/ --cov=backend --cov-report=html
 # Open htmlcov/index.html
 ```
 
-## ✅ CI/CD
+## CI/CD
 
 These tests are automatically run by Jenkins pipeline:
 - Location: `jenkins/jenkins-pipeline-complete.groovy`

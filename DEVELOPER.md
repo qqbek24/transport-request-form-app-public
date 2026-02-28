@@ -93,7 +93,7 @@ transport-request-form-app/
 │   ├── Dockerfile
 │   └── certs/                      # SSL certificates
 │
-├── .env                            # ⚠️ MAIN - Environment (Docker)
+├── .env                            # MAIN - Environment (Docker)
 ├── .env.example                    # Template
 ├── backend/.env                    # Optional - for Python direct
 ├── backend/.env.example            # Template
@@ -118,7 +118,7 @@ transport-request-form-app/
 ├── DEBUG_MODE.md                   # Debug mode documentation
 ├── SHAREPOINT_SETUP.md             # SharePoint setup guide
 ├── TODO_INTERNATIONALIZATION.md    # i18n implementation plan
-└── DEVELOPER.md                    # ⬅️ THIS FILE
+└── DEVELOPER.md                    # THIS FILE
 ```
 
 ### Data Flow
@@ -159,7 +159,7 @@ Email Notifications (MS Graph API)
 
 ---
 
-## 💻 Environment Setup
+## Environment Setup
 
 ### Requirements
 
@@ -244,7 +244,7 @@ SHAREPOINT_ACCESS_TOKEN=
 DEBUG_SECRET_KEY=Your_Debug_Password
 ```
 
-**⚠️ Important: Both files MUST have identical structure!**
+**Important: Both files MUST have identical structure!**
 
 ### 5. SharePoint Configuration
 
@@ -309,7 +309,7 @@ prod:
 
 ---
 
-## 🚀 Running the Application
+## Running the Application
 
 ### Option 1: Docker Compose (Recommended)
 
@@ -326,9 +326,9 @@ docker compose -f docker-compose.yaml -f docker-compose.override.yaml up --build
 ```
 
 **Why nginx in dev?**
-- ✅ Solves CORS issues
-- ✅ Simulates production environment
-- ✅ Single entry point for frontend + backend
+- Solves CORS issues
+- Simulates production environment
+- Single entry point for frontend + backend
 
 #### Production Mode (without nginx - direct ports)
 
@@ -424,7 +424,7 @@ npm run dev
 
 ---
 
-## 🔐 Token Manager
+## Token Manager
 
 ### Token Manager Architecture
 
@@ -687,27 +687,27 @@ curl http://localhost:8010/api/sharepoint/status
 
 ---
 
-## 📋 .env Configuration
+## .env Configuration
 
 ### WHICH FILE TO USE?
 
 ```
 transport-request-form-app/
-├── .env                    ← MAIN (Docker Compose) ✅ ALWAYS USE THIS!
+├── .env                    ← MAIN (Docker Compose) ALWAYS USE THIS!
 ├── .env.example           ← Template
 ├── backend/
 │   ├── .env               ← OPTIONAL (only Python without Docker)
 │   └── .env.example       ← Template
 ```
 
-### ✅ `.env` (main folder) - FOR DOCKER
+### `.env` (main folder) - FOR DOCKER
 
 **Location:** `transport-request-form-app/.env`
 
 **When used:**
-- ✅ `docker compose up` (production)
-- ✅ `docker compose up` z override (development)
-- ✅ Jenkins deployment
+- `docker compose up` (production)
+- `docker compose up` z override (development)
+- Jenkins deployment
 
 **Passed to:**
 - Backend container (as environment variables)
@@ -741,19 +741,19 @@ SHAREPOINT_ACCESS_TOKEN=
 DEBUG_SECRET_KEY=TestPassword
 ```
 
-### ⚠️ `backend/.env` - OPTIONAL
+### `backend/.env` - OPTIONAL
 
 **Location:** `transport-request-form-app/backend/.env`
 
 **When used:**
-- ⚠️ ONLY when running: `python backend/fastapi_app.py`
-- ⚠️ ONLY local tests without Docker
-- ⚠️ NOT used by Docker Compose!
+- ONLY when running: `python backend/fastapi_app.py`
+- ONLY local tests without Docker
+- NOT used by Docker Compose!
 
 **NOT used when:**
-- ❌ `docker compose up`
-- ❌ Jenkins deployment
-- ❌ Production
+- `docker compose up`
+- Jenkins deployment
+- Production
 
 **Contents (IDENTICAL to main .env!):**
 
@@ -772,7 +772,7 @@ SHAREPOINT_ACCESS_TOKEN=
 DEBUG_SECRET_KEY=Your_Debug_Password
 ```
 
-### 🔒 Security
+### Security
 
 **In Git:**
 ```gitignore
@@ -781,16 +781,16 @@ DEBUG_SECRET_KEY=Your_Debug_Password
 backend/.env
 ```
 
-**❌ NEVER COMMIT:**
+**NEVER COMMIT:**
 - `.env` - contains passwords
 - `backend/.env` - contains passwords
 - Files with SharePoint tokens
 
-**✅ COMMIT:**
+**COMMIT:**
 - `.env.example` - template without passwords
 - `backend/.env.example` - template without passwords
 
-### 🔄 .env Synchronization
+### .env Synchronization
 
 **Important:** Both files MUST have identical variable structure (only comments can differ)!
 
@@ -801,7 +801,7 @@ backend/.env
 Copy-Item ".env" -Destination "backend\.env" -Force
 ```
 
-### 📝 Creating .env from .env.example
+### Creating .env from .env.example
 
 ```powershell
 # Main .env
@@ -817,7 +817,7 @@ notepad backend\.env
 
 ---
 
-## 📊 SharePoint Integration
+## SharePoint Integration
 
 ### Microsoft Graph API
 
@@ -844,14 +844,14 @@ The application uses **Microsoft Graph API** to interact with SharePoint Excel:
 #### 1. Excel API (Recommended - `use_excel_api: true`)
 
 **Advantages:**
-- ✅ Works on open Excel files
-- ✅ Fast - direct row insertion
-- ✅ No file locking issues (error 423)
-- ✅ Thread-safe
+- Works on open Excel files
+- Fast - direct row insertion
+- No file locking issues (error 423)
+- Thread-safe
 
 **Limitations:**
-- ❌ Requires Excel formatted as **Table** (Insert → Table)
-- ❌ More API calls (discover table → insert row)
+- Requires Excel formatted as **Table** (Insert → Table)
+- More API calls (discover table → insert row)
 
 **Implementation:**
 
@@ -893,14 +893,14 @@ def insert_row_to_table(self, worksheet_name: str, table_name: str, values: list
 #### 2. Download/Upload (Fallback - `use_excel_api: false`)
 
 **Advantages:**
-- ✅ Works on any Excel file (doesn't require Table format)
-- ✅ Full control over formatting
-- ✅ Can use openpyxl/xlwings for advanced operations
+- Works on any Excel file (doesn't require Table format)
+- Full control over formatting
+- Can use openpyxl/xlwings for advanced operations
 
 **Limitations:**
-- ❌ Doesn't work on open files (error 423 Locked)
-- ❌ Slower - downloads entire file + upload
-- ❌ Race conditions with concurrent access
+- Doesn't work on open files (error 423 Locked)
+- Slower - downloads entire file + upload
+- Race conditions with concurrent access
 
 **Implementation:**
 
@@ -967,7 +967,7 @@ def fuzzy_match_columns(form_data: dict, excel_headers: list, mapping: dict) -> 
     - Form field: "deliveryNoteNumber"
     - Mapping: "Delivery note number"
     - Excel header: "delivery-note-number"
-    → MATCH ✅
+    → MATCH
     
     Algorithm:
     1. Normalize: lowercase + remove non-alphanumeric
@@ -994,9 +994,9 @@ def fuzzy_match_columns(form_data: dict, excel_headers: list, mapping: dict) -> 
 **Each submission is saved to JSON BEFORE sending to SharePoint**
 
 **Reason:**
-- ✅ Backup if SharePoint is down
-- ✅ Ability for later synchronization via SchedulerManager
-- ✅ Audit trail of all submissions
+- Backup if SharePoint is down
+- Ability for later synchronization via SchedulerManager
+- Audit trail of all submissions
 
 **Location:** `backend/data/transport_requests.json`
 
@@ -1029,7 +1029,7 @@ def fuzzy_match_columns(form_data: dict, excel_headers: list, mapping: dict) -> 
 
 ---
 
-## 📡 API Endpoints
+## API Endpoints
 
 ### Main Endpoints
 
@@ -1286,7 +1286,7 @@ Reset all performance metrics
 
 ---
 
-## 🧪 Testing
+## Testing
 
 ### Unit Tests
 
@@ -1396,7 +1396,7 @@ locust -f locustfile.py --host=http://localhost:8010
 
 ---
 
-## 🚢 Deployment Jenkins
+## Deployment Jenkins
 
 ### Jenkins Pipeline Parameters
 
@@ -1418,7 +1418,7 @@ locust -f locustfile.py --host=http://localhost:8010
    - **Scope:** Global
    - **Username:** `transport-app@yourdomain.com`
    - **Password:** `YourPassword123!`
-   - **ID:** `webapp-transport-app` ⚠️ IMPORTANT - used in pipeline!
+   - **ID:** `webapp-transport-app` IMPORTANT - used in pipeline!
    - **Description:** `Transport WebApp - Token Manager password`
 
 ### Pipeline Flow
@@ -1562,7 +1562,7 @@ pipeline {
 2. Click: **Build with Parameters**
 3. Set parameters:
    - ACTION: `deploy`
-   - ✅ USE_TOKEN_MANAGER: `true`
+   - USE_TOKEN_MANAGER: `true`
    - MANUAL_SHAREPOINT_TOKEN: (leave empty)
    - DEBUG_SECRET_KEY: (optional)
 4. Click: **Build**
@@ -1588,7 +1588,7 @@ curl http://localhost:8010/api/token/info
 
 ---
 
-## 🐛 Debugging
+## Debugging
 
 ### Application Logs
 
@@ -1719,7 +1719,7 @@ docker exec transport-request-form-app-backend-1 ls -la /app/logs/
 
 ---
 
-## 🔧 Troubleshooting
+## Troubleshooting
 
 ### Problem 1: Token Manager 401 Error
 
@@ -1910,7 +1910,7 @@ ERROR: Credentials 'webapp-transport' not found
 
 ---
 
-## 📚 Additional Resources
+## Additional Resources
 
 ### External Documentation
 
